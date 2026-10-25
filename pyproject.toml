@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bomdiff"
+version = "0.1.0"
+description = "BOM 版本对比：新增/删除/用量变更一目了然 | Bill-of-materials version diff tool"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "aoyexiaoqi"}]
+requires-python = ">=3.9"
+keywords = ["bom", "bill-of-materials", "diff", "manufacturing", "erp", "plm", "process-engineering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Intended Audience :: Manufacturing",
+  "Natural Language :: Chinese (Simplified)",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pytest-cov"]
+
+[project.scripts]
+bomdiff = "bomdiff.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/aoyexiaoqi/bomdiff"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

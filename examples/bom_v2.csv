@@ -1,0 +1,7 @@
+part_number,description,qty,unit,level,reference
+PCB-001,主板 PCB,1,pcs,0,
+IC-100,主控芯片,1,pcs,1,U1
+R-10K,电阻 10K 0603,16,pcs,1,R1-R16
+C-100N,电容 100nF 0603,8,pcs,1,C1-C8
+CONN-2P,2P 接线端子,2,pcs,1,J1-J2
+LED-RED,红色指示灯 LED,3,pcs,1,D1-D3
